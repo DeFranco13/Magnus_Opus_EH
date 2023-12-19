@@ -113,11 +113,11 @@ def is_interface_up(interface):
 
 def check_args():
     if(len(sys.argv) < 3 or len(sys.argv) > 3):
-        print("Wrong usage: ScapyFi.py -i interface_name")
+        print("Wrong usage: main.py -i interface_name")
         exit(1)
     if(sys.argv[1] != "-i"):
         print("Argument "+ str(sys.argv[1]) + " not understood")
-        print("Usage : ScapyFi.py -i interface_name")
+        print("Usage : main.py -i interface_name")
         exit(1)
     try:
         print(is_interface_up(sys.argv[2]))
