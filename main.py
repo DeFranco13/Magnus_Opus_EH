@@ -17,6 +17,10 @@ except:
 
 try:
     from scapy.all import *
+    from scapy.layers.dot11 import Dot11
+    from scapy.layers.dot11 import Dot11Deauth
+    from scapy.layers.dot11 import RadioTap
+    from scapy.layers.dot11 import Dot11Elt
 except:
     print("Missing module scapy Installing...")
     os.system("pip3 install scapy")
